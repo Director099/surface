@@ -1,0 +1,70 @@
+@mobile-widts: ~"(max-width: 767px)";
+@tablet-widts: ~"(min-width: 768px)";
+@desktop-widts: ~"(min-width: 1920px)";
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widts {
+    width: 750px;
+  }
+
+  @media @desktop-widts {
+    width: 1532px;
+  }
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../font/Proxima-Nova-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../font/Proxima-Nova-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../font/Proxima-Nova-Light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1920px;
+}
+
+.main-header {
+   background: url("../img/background.jpg") no-repeat center top;
+   background-size: cover;
+}
+
+@media @mobile-widts {
+
+
+  .main-header {
+    min-height: 568px;
+  }
+}
+
+
+@media @tablet-widts {
+  .main-header {
+
+    min-height: 960px;
+  }
+}
+
+@media @desktop-widts {
+  .main-header {
+
+  }
+}
