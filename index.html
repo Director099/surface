@@ -10,16 +10,16 @@
 <body>
   <header class="main-header">
    <div class="main-header__wrapper">
-      <img src="img/logo-surface.svg" alt="Логотип" class="logo">
+      <img src="img/logo-surface.svg" alt="Логотип" class="logo" width="189" height="33">
      <p class="main-header__site-category">for athlets and coaches</p>
    </div>
     <div class="main-header__tagline">
       <p class="main-header__ready">be recruited</p>
       <p class="main-header__appeal">play college sports</p>
     </div>
-    <div class="main-header__dowload-mobile">
-      <a href="#" class="btn-download">download on the <span>app store</span></a>
-      <a href="#" class="btn-download">get it on <span>google play</span></a>
+    <div class="download-mobile">
+      <a href="#" class="btn-download  btn-app">download on the<br><span>app store</span></a>
+      <a href="#" class="btn-download  btn-gp">get it on<br><span>google play</span></a>
     </div>
     <nav class="main-header__navigation">
       <a href="#" class="main-header__navigation-sport">football</a>
@@ -30,74 +30,128 @@
     </nav>
   </header>
   <main>
-    <section class="athlets">
+    <article class="athlets">
       <h2>athlets</h2>
-      <ul class="athlets__characteristic">
+      <picture>
+        <source media="(min-width: 1920px)" srcset="img/footballer-desk.png">
+        <source media="(min-width: 768px)" srcset="img/footballer-tablet.png">
+        <img src="img/footballer-mob.png" alt="Команда">
+      </picture>
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <ul class="characteristic">
         <li>
-          <h3>Connection</h3>
+          <h3><span class="enumeration">01</span>Connection</h3>
           <p>Connect with coaches directly, you can ping coaches to view profile.</p>
         </li>
         <li>
-          <h3>Collaboration</h3>
-          <p>Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
+          <h3><span class="enumeration">02</span>Collaboration</h3>
+          <p>Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
         </li>
         <li>
-          <h3>Growth</h3>
+          <h3><span class="enumeration">03</span>Growth</h3>
           <p>Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</p>
         </li>
       </ul>
-    </section>
-    <section class="plaers">
-      <h2>plaers</h2>
-      <ul class="plaers__characteristic">
+    </article>
+    <article class="players">
+      <h2>players</h2>
+      <picture>
+        <source media="(min-width: 1920px)" srcset="img/basket-desk.png">
+        <source media="(min-width: 768px)" srcset="img/basket-tablet.png">
+        <img src="img/basket-mob.png" alt="Команда">
+      </picture>
+      <input type="radio" id="btn-players1" name="players" checked>
+      <input type="radio" id="btn-players2" name="players">
+      <input type="radio" id="btn-players3" name="players">
+      <div class="slider-controls">
+        <label for="btn-players1"></label>
+        <label for="btn-players2"></label>
+        <label for="btn-players3"></label>
+      </div>
+      <ul class="characteristic">
         <li>
-          <h3>Connection</h3>
+          <h3><span class="enumeration">01</span>Connection</h3>
           <p>Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
         </li>
         <li>
-          <h3>Collaboration</h3>
+          <h3><span class="enumeration">02</span>Collaboration</h3>
           <p>Work with recruiter to increase your chances of finding talented athlete.</p>
         </li>
         <li>
-          <h3>Growth</h3>
+          <h3><span class="enumeration">03</span>Growth</h3>
           <p>Save your time, recruit proper athlets for your team.</p>
         </li>
       </ul>
-    </section>
-    <div class="advantages">
-      <img src="" alt="">
+    </article>
+    <article class="advantages">
+      <div class="advantages__routine">
+        <p class="advantages__routine--enumeration">01</p>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/be-active.jpg">
+          <img src="img/be-active-mobile.jpg" alt="Будь активен">
+        </picture>
+      </div>
       <section class="advantages__description">
         <h2>Be active</h2>
         <p>Post videos with your skills, Like and follow others to be more popular.</p>
       </section>
-    </div>
-    <div class="advantages">
-      <img src="" alt="">
+    </article>
+    <article class="advantages">
+      <div class="advantages__routine">
+        <p class="advantages__routine--enumeration">02</p>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/command-fotball.jpg">
+          <img src="img/command-fotball-mob.jpg" alt="Команда">
+        </picture>
+      </div>
       <section class="advantages__description">
         <h2>Find contact</h2>
         <p>Contact others to find right coach or athlete you are looking for.</p>
       </section>
-    </div>
-    <div class="advantages">
-      <img src="" alt="">
+    </article>
+    <article class="advantages">
+      <div class="advantages__routine">
+        <p class="advantages__routine--enumeration">03</p>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/frend-fotball.jpg">
+          <img src="img/frend-fotball-mob.jpg" alt="Болельщики">
+        </picture>
+      </div>
       <section class="advantages__description">
         <h2>Work it</h2>
         <p>Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this a enjoyable experience.</p>
       </section>
-    </div>
+    </article>
   </main>
-  <footer>
-    <img src="img/logo-download.png" alt="логотип" class="logo">
-    <span>Download app</span>
-    <p>Show everyone what you can do! </p>
-    <div class="main-header__btn">
-      <a href="#" class="btn-download"></a>
-      <a href="#" class="btn-download"></a>
+  <footer class="main-footer">
+    <div class="main-footer__exhortation">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo-download.png">
+        <img src="img/logo-download-mob.png" alt="логотип загрузки">
+      </picture>
+      <p>
+        <span class="download">Download app</span><br>Show everyone what you can do!
+      </p>
     </div>
-    <div class="social">
-      <a href="#" class="social__social-btn  btn">facebook</a>
-      <a href="#" class="social__social-btn  btn">twitter</a>
-      <a href="#" class="social__social-btn  btn">instagram</a>
+    <div class="download-mobile">
+      <a href="#" class="btn-download  btn-app">download on the<br><span>app store</span></a>
+      <a href="#" class="btn-download  btn-gp">get it on<br><span>google play</span></a>
+    </div>
+    <div class="main-footer__bottom">
+      <img src="img/logo-surface.svg" alt="логотип" class="logo" width="172" height="30">
+      <div class="social">
+        <a href="#" class="social__social-btn  social-fc">facebook</a>
+        <a href="#" class="social__social-btn  social-tw">twitter</a>
+        <a href="#" class="social__social-btn  social-in">instagram</a>
+      </div>
+      <p class="about-us">Contact Us | Terms & Conditions</p>
     </div>
   </footer>
 </body>
